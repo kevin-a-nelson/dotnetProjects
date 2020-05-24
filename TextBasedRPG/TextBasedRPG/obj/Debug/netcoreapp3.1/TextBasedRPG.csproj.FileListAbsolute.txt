@@ -1,0 +1,13 @@
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\obj\Debug\netcoreapp3.1\TextBasedRPG.csprojAssemblyReference.cache
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\obj\Debug\netcoreapp3.1\TextBasedRPG.AssemblyInfoInputs.cache
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\obj\Debug\netcoreapp3.1\TextBasedRPG.AssemblyInfo.cs
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\obj\Debug\netcoreapp3.1\TextBasedRPG.csproj.CoreCompileInputs.cache
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\bin\Debug\netcoreapp3.1\TextBasedRPG.exe
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\bin\Debug\netcoreapp3.1\TextBasedRPG.deps.json
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\bin\Debug\netcoreapp3.1\TextBasedRPG.runtimeconfig.json
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\bin\Debug\netcoreapp3.1\TextBasedRPG.runtimeconfig.dev.json
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\bin\Debug\netcoreapp3.1\TextBasedRPG.dll
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\bin\Debug\netcoreapp3.1\TextBasedRPG.pdb
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\obj\Debug\netcoreapp3.1\TextBasedRPG.dll
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\obj\Debug\netcoreapp3.1\TextBasedRPG.pdb
+C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\obj\Debug\netcoreapp3.1\TextBasedRPG.genruntimeconfig.cache
