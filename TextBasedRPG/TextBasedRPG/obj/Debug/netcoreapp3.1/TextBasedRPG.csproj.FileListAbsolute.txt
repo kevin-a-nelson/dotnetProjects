@@ -11,6 +11,3 @@ C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\bin\Debug\netcoreapp3.1\Te
 C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\obj\Debug\netcoreapp3.1\TextBasedRPG.dll
 C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\obj\Debug\netcoreapp3.1\TextBasedRPG.pdb
 C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\obj\Debug\netcoreapp3.1\TextBasedRPG.genruntimeconfig.cache
-C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\bin\Debug\netcoreapp3.1\TickTackToe.dll
-C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\bin\Debug\netcoreapp3.1\TickTackToe.pdb
-C:\Users\nelso\source\repos\TextBasedRPG\TextBasedRPG\obj\Debug\netcoreapp3.1\TextBasedRPG.csproj.CopyComplete

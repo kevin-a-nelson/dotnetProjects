@@ -53,12 +53,82 @@ namespace TextBasedRPG
             }
             return false;
         }
+        
+        public static bool IsVerticalWin()
+        {
+            for (int row = 0; row < board.GetLength(0); row++)
+            {
+                Hashtable markerCounters = new Hashtable()
+                {
+                    {"X", 0 },
+                    {"O", 0 },
+                };
+
+                for (int col = 0; col < board.GetLength(1); col++)
+                {
+                    string marker = board[col, row];
+                    if (marker == " ")
+                    {
+                        continue;
+                    }
+                    int markerCount = (int)markerCounters[marker];
+                    markerCounters[marker] = markerCount + 1;
+                }
+
+                if (markerCounters.ContainsValue(3))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public static bool IsDiagonalWin()
+        {
+            Hashtable markerCounters = new Hashtable()
+                {
+                    {"X", 0 },
+                    {"O", 0 },
+                };
+
+            for (int row = 0; row < board.GetLength(0); row++)
+            {
+                string marker = board[row, row];
+                if(marker == " ")
+                {
+                    continue;
+                }
+                int newMarkerCount = (int)markerCounters[marker] + 1;
+                markerCounters[marker] = newMarkerCount;
+            }
+
+            if(markerCounters.ContainsValue(3))
+            {
+                return true;
+            }
+
+            return false;
+        }
+
+
+
         public static bool IsGameOver()
         {
             if(IsHorizontalWin())
             {
                 return true;
             }
+            
+            if(IsVerticalWin())
+            {
+                return true;
+            }
+
+            if(IsDiagonalWin())
+            {
+                return true;
+            }
+
             return false;
         }
 
@@ -74,13 +144,13 @@ namespace TextBasedRPG
 
         public static void writeDisplay()
         {
-            string display = $"\t    TIC TAC TOE \n\n" +
-                $"\t     A   B   C\n\n" +
-                $"\t1  | {board[0, 0]} | {board[0, 1]} | {board[0, 2]} |\n" +
-                $"\t   ------------\n" +
-                $"\t2  | {board[1, 0]} | {board[1, 1]} | {board[1, 2]} |\n" +
-                $"\t   ------------\n" +
-                $"\t3  | {board[2, 0]} | {board[2, 1]} | {board[2, 2]} |\n\n";
+            string display = $"\t     TIC TAC TOE \n\n" +
+                $"\t      A   B   C\n\n" +
+                $"\t1   | {board[0, 0]} | {board[0, 1]} | {board[0, 2]} |\n" +
+                $"\t    -------------\n" +
+                $"\t2   | {board[1, 0]} | {board[1, 1]} | {board[1, 2]} |\n" +
+                $"\t    -------------\n" +
+                $"\t3   | {board[2, 0]} | {board[2, 1]} | {board[2, 2]} |\n\n";
            
             Console.WriteLine(display);
         }
@@ -133,7 +203,12 @@ namespace TextBasedRPG
             {
                 return false;
             }
-            
+
+            if (board[row, column] != " ")
+            {
+                return false;
+            }
+
             return true;
         } 
 

@@ -6,9 +6,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="TickTackToe">
-      <HintPath>..\..\TickTackToe\TickTackToe\obj\Release\netcoreapp3.1\TickTackToe.dll</HintPath>
-    </Reference>
   </ItemGroup>
 
 </Project>
