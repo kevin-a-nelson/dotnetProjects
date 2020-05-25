@@ -85,6 +85,7 @@ namespace TextBasedRPG
 
         public static bool IsDiagonalWin()
         {
+
             Hashtable markerCounters = new Hashtable()
                 {
                     {"X", 0 },
@@ -107,6 +108,30 @@ namespace TextBasedRPG
                 return true;
             }
 
+            markerCounters = new Hashtable()
+                {
+                    {"X", 0 },
+                    {"O", 0 },
+                };
+
+            // [2,0], [1,1], [0, 2]
+            // [2 - row, row]
+            for (int row = 0; row < board.GetLength(0); row++)
+            {
+                string marker = board[2 - row, row];
+                if(marker == " ")
+                {
+                    continue;
+                }
+                int newMarkerCount = (int)markerCounters[marker] + 1;
+                markerCounters[marker] = newMarkerCount;
+            }
+
+            if(markerCounters.ContainsValue(3))
+            {
+                return true;
+            }
+            
             return false;
         }
 
@@ -204,7 +229,10 @@ namespace TextBasedRPG
                 return false;
             }
 
-            if (board[row, column] != " ")
+            int columnIdx = char.ToUpper(userInput[0]) - 65;
+            int rowIdx = int.Parse(userInput[1].ToString()) - 1;
+
+            if (board[rowIdx, columnIdx] != " ")
             {
                 return false;
             }
